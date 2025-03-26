@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        /* Centering the sign-up box */
+        .signup-container {
+            width: 100%;
+            max-width: 400px;
+         
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            position: fixed;
+           
+        }
+        
+        .signup-btn {
+            background-color: #ff7b00;
+            color: white;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .signup-btn:hover {
+            background-color: #ff5500;
+        }
+
+        .login-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+        body {
+            font-family: 'Russo One', sans-serif;
+        }
+
+        .bg-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            z-index: -1; 
+            height:750px;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <img src="images/bg-image-1.jpg" alt="Restaurant Background" class="bg-image">
+    <div class="container d-flex justify-content-center align-items-center vh-100 animate__animated animate__fadeInDown">
+        <div class="signup-container p-4 bg-white shadow rounded">
+            <h3 class="text-center">Sign Up</h3>
+            <form>
+                <!-- Username -->
+                <div class="mb-3">
+                    <label for="username" class="form-label">Username</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                        <input type="text" class="form-control" id="username" placeholder="Choose a username" required>
+                    </div>
+                </div>
+    
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    </div>
+                </div>
+    
+                <!-- Password -->
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                        <input type="password" class="form-control" id="password" placeholder="Create a password" required>
+                    </div>
+                </div>
+    
+                <!-- Confirm Password -->
+                <div class="mb-3">
+                    <label for="confirm-password" class="form-label">Confirm Password</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock-fill"></i></span>
+                        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                </div>
+    
+                <!-- Sign Up Button -->
+                <button type="submit" class="btn signup-btn w-100 btn-primary">Sign Up</button>
+    
+                <!-- Login Option -->
+                <a href="login.html" class="login-link d-block text-center mt-3">Already have an account? Login</a>
+            </form>
+        </div>
+    </div>
+    
+
+    <!-- Bootstrap JS (For Responsiveness Only) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
